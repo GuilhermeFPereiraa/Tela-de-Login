@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(../imgs/backgroundImage.jpg) no-repeat center/cover;
+  color: white;
+}
+
+header {
+  /* border: 2px solid red; */
+  height: 10vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+header > nav > a {
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  margin-right: 20px;
+  font-size: 1.3vw;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+header > nav > a:hover {
+  padding: 5px;
+  font-size: 1.5vw;
+}
+
+main {
+  /* border: 3px solid red; */
+  height: 85vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../imgs/backgroundImage.jpg) no-repeat cover;
+}
+
+main > #informations {
+  /* border: 2px solid green; */
+  height: 80%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+main > #informations > img {
+  height: 9%;
+}
+
+main > #informations > h1 {
+  font-size: 4vw;
+  margin: 20px 0;
+}
+
+main > #informations > p {
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+}
+
+main > #informations > #icons {
+  /* border: 3px solid orange; */
+  display: flex;
+  margin-top: 20px;
+}
+
+main > #informations > #icons > a > i{
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 7px;
+  cursor: pointer;
+  transition: .7s;
+}
+
+main > #informations > #icons > a > i:hover {
+  padding: 30px;
+}
+
+main > #loginForm {
+  /* border: 2px solid blue; */
+  height: 80%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > #loginForm > form {
+  /* border: 2px solid green; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > #loginForm > form > h2 {
+  text-align: center;
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+
+main > #loginForm > form > input, #passwordSection > input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  outline: 0;
+  transition: .4s;
+}
+
+main > #loginForm > form > input::placeholder, #passwordSection > input::placeholder {
+  font-weight: 500;
+  color: white;
+}
+
+main > #loginForm > form > input:focus, #passwordSection > input:focus {
+  padding: 25px;
+}
+
+main > #loginForm > form > #passwordSection {
+  display: flex;
+}
+
+main > #loginForm > form > #passwordSection > #inputPassword {
+  width: 100%;
+}
+
+main > #loginForm > form > #passwordSection > #showPassword {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1%;
+  cursor: pointer;
+}
+
+main > #loginForm > form > #submitForm {
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  margin: 20px;
+  transition: .4s linear;
+  cursor: pointer;
+}
+
+main > #loginForm > form > #submitForm:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  margin: 20px 2px;
+}
+
+main > #loginForm > form > hr {
+  border: none;
+  border-top: 7px dotted white;
+  margin: 10px 15px 20px 15px;
+}
+
+main > #loginForm > form > p {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+main > #loginForm > form > p > a {
+  color: lightskyblue;
+}
+
+/* Media queries: */
+
+@media screen and (min-width: 2200px) {
+  main > #informations > #icons > a > i{
+    padding: 40px;
+    margin-right: 20px;
+  }
+  
+  main > #informations > #icons > a > i:hover {
+    padding: 45px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 90vw;
+  }
+
+  header > nav > a {
+    margin-right: 10px;
+    font-size: 1.7vw;
+  }
+  
+  header > nav > a:hover {
+    font-size: 1.9vw;
+  }
+  
+  main {
+    width: 90vw;
+  }
+  
+  main > #informations > p {
+    font-size: 2vw;
+  }
+
+  main > #informations > #icons > a > i{
+    padding: 17px;
+  }
+  
+  main > #informations > #icons > a > i:hover {
+    padding: 20px;
+  }
+
+  main > #loginForm > form > input, #passwordSection > input {
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+  main > #loginForm > form > input::placeholder, #passwordSection > input::placeholder {
+    font-weight: 500;
+    color: white;
+  }
+  
+  main > #loginForm > form > p {
+    text-align: center;
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header > nav > a {
+    margin-right: 10px;
+    font-size: 2.4vw;
+  }
+  
+  header > nav > a:hover {
+    font-size: 2.6vw;
+  }
+  
+  main {
+    width: 95vw;
+  }
+
+  main > #informations > h1 {
+    font-size: 5.5vw;
+  }
+  
+  main > #informations > p {
+    font-size: 2.7vw;
+  }
+
+  main > #informations > #icons > a > i{
+    padding: 10px;
+  }
+  
+  main > #informations > #icons > a > i:hover {
+    padding: 12px;
+  }
+
+  main > #loginForm > form > h2 {
+    font-size: 4.5vw;
+  }
+
+  main > #loginForm > form > input, #passwordSection > input {
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  main > #loginForm > form > input::placeholder, #passwordSection > input::placeholder {
+    font-weight: 500;
+  }
+  
+  main > #loginForm > form > p {
+    font-size: 2vw;
+  }
+
+  main > #loginForm > form > #submitForm {
+    border-radius: 20px;
+    margin-bottom: 5px;
+  }
+
+  main > #loginForm > form > #submitForm:hover {
+    margin: 20px 2px 5px 2px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    height: 150vh;
+  }
+
+  header {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  header > nav > a {
+    margin-right: 10px;
+    font-size: 3.5vw;
+  }
+
+  header > nav > a:hover {
+    padding: 0px;
+    font-size: 3.5vw;
+  }
+
+  main {
+    width: 100vw;
+    margin: 5px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+  }
+
+  main > #informations {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  
+  main > #informations > img {
+    height: 10%;
+    margin-bottom: 10px;
+  }
+  
+  main > #informations > h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    margin: 20px 0;
+  }
+  
+  main > #informations > p {
+    font-size: 4.5vw;
+    margin: 7px 4px;
+  }
+  
+  main > #informations > #icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  main > #informations > #icons > a > i{
+    padding: 20px;
+  }
+  
+  main > #informations > #icons > a > i:hover {
+    padding: 30px;
+  }
+
+  main > #loginForm {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: start;
+  }
+  
+  main > #loginForm > form {
+    width: 80%;
+  }
+  
+  main > #loginForm > form > h2 {
+    font-size: 10vw;
+    margin: 20px 0;
+  }
+  
+  main > #loginForm > form > input, #passwordSection > input {
+    font-size: 5vw;
+    margin-bottom: 7px;
+  }
+  
+  main > #loginForm > form > input:focus, #passwordSection > input:focus {
+    padding: 20px;
+  }
+  
+  main > #loginForm > form > #submitForm {
+    margin: 25px 20px;
+  }
+  
+  main > #loginForm > form > #submitForm:hover {
+    margin: 5px 2px;
+  }
+  
+  main > #loginForm > form > hr {
+    border-top: 5px dotted white;
+    margin: 10px 3px 20px 3px;
+  }
+  
+  main > #loginForm > form > p {
+    font-size: 4.5vw;
+  }
+}

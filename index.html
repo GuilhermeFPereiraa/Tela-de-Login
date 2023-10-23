@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/c086fe9d7f.js" crossorigin="anonymous"></script>
+  <title>Siga - Login Aluno</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a target="_blank" href="https://siga.cps.sp.gov.br">SIGA</a>
+      <a target="_blank" href="https://www.cps.sp.gov.br/fatec/">Fatec</a>
+      <a target="_blank" href="https://www.cps.sp.gov.br">Centro Paula Souza - CPS</a>
+      <a target="_blank" href="http://www.fatec.sp.gov.br/view/Default.aspx">Email institucional</a>
+    </nav>
+  </header>
+  <main id="loginForm">
+    <section id="informations">
+      <img src="./imgs/logosiga.png" alt="Logo do SIGA">
+      <h1>Bem-Vindo aluno!</h1>
+      <p>Por aqui você consegue ter acesso ao seu perfil e todas as suas informações institucionais!</p>
+      <p>Nos siga nas nossas redes sociais!</p>
+
+      <div id="icons">
+        <a target="_blank" href="https://www.instagram.com/centropaulasouza/"><i class="fa-brands fa-instagram fa-lg" style="color: white;"></i></a>
+        <a target="_blank" href="https://www.facebook.com/centropaulasouza/?locale=pt_BR"><i class="fa-brands fa-facebook fa-lg" style="color: white;"></i></a>
+        <a target="_blank" href="https://twitter.com/paulasouzasp"><i class="fa-brands fa-x-twitter fa-lg" style="color: white;"></i></a>
+        <a target="_blank" href="https://www.youtube.com/@centropaulasouzaspoficial"><i class="fa-brands fa-youtube fa-lg" style="color: white;"></i></a>
+      </div>
+    </section>
+    <section id="loginForm">
+      <form action="">
+        <h2>Login</h2>
+        <input type="text" placeholder="Usuário" id="inputUser" required>
+        <div id="passwordSection">
+          <input type="password" placeholder="Senha" id="inputPassword" required>
+          <i class="fa-regular fa-eye fa-lg" id="showPassword" onclick="showPassword()" style="color: white;"></i>
+        </div>
+        <input type="submit" value="Confirmar" id="submitForm" onclick="submitForm()">
+        <hr>
+        <p>Dificuldade em fazer o login? <a target="_blank" href="https://siga.cps.sp.gov.br/aluno/login_auxproblemas.aspx">clique aqui</a></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
